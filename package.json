@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d ./server ./index.js -s",
-    "start:dev": "NODE_ENV=development concurrently --kill-others 'npm run gulp' 'nodemon --exec babel-node ./index'",
+    "build": "babel -d ./dist ./server -s",
+    "start:dev": "NODE_ENV=development concurrently --kill-others 'npm run gulp' 'nodemon --exec babel-node ./server'",
     "gulp": "gulp",
-    "start": "NODE_ENV=production node ./server"
+    "start": "NODE_ENV=production node ./dist"
   },
   "keywords": [],
   "author": "",

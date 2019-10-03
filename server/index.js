@@ -10,9 +10,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV;
 
-const relativePath = env === 'production' ? '..': '.';
-const staticPath = path.join(__dirname, relativePath, 'public');
-const viewsPath = path.join(__dirname, relativePath, 'views');
+const staticPath = path.join(__dirname, '..', 'public');
+const viewsPath = path.join(__dirname, '..', 'src/views');
 
 app.set('view engine', 'vash');
 app.set('views', viewsPath);
