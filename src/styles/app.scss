@@ -7,16 +7,36 @@ body {
   font-size: 16px;
 }
 
-code {
-  line-height: 1.4;
-  font-family: 'Source Code Pro', monospace, 'Courier New', Courier;
-  font-weight: 500;
-}
-
-.hljs {
-  background: #f8f8f8;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
+}
+
+// code sample styles
+.code-sample {
+
+  code {
+    line-height: 1.4;
+    font-family: 'Source Code Pro', monospace, 'Courier New', Courier;
+    font-weight: 500;
+  }
+  
+  .hljs {
+    background: #f8f8f8;
+  }
+
+  h2:first-of-type {
+    text-align: center;
+    font-size: 32px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
 }
