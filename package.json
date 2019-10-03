@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel -d ./server ./index.js -s",
-    "start:dev": "NODE_ENV=development nodemon --exec babel-node ./index",
+    "start:dev": "NODE_ENV=development concurrently --kill-others 'npm run gulp' 'nodemon --exec babel-node ./index'",
+    "gulp": "gulp",
     "start": "NODE_ENV=production node ./server"
   },
   "keywords": [],
@@ -27,6 +28,9 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "concurrently": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
     "nodemon": "^1.19.1"
   }
 }
