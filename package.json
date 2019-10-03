@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d ./dist ./server.js -s",
+    "build": "babel -d ./server ./index.js -s",
     "start:dev": "NODE_ENV=development nodemon --exec babel-node ./server.js",
-    "start": "NODE_ENV=production node dist/server.js"
+    "start": "NODE_ENV=production node ./server"
   },
   "keywords": [],
   "author": "",
