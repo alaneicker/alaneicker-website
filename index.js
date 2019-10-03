@@ -17,8 +17,14 @@ const staticPath = path.join(
   'public'
 );
 
+const viewsPath = path.join(
+  __dirname, 
+  env === 'production' ? '..': '.', 
+  'views'
+);
+
 app.set('view engine', 'vash');
-app.set('views', `${__dirname}/views`);
+app.set('views', viewsPath);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
