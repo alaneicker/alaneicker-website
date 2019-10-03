@@ -2,7 +2,6 @@
   "name": "node-project-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "browserSync": "browser-sync start --no-notify --proxy localhost:3000 --port 3002 --files src/*",
     "build": "babel -d ./dist ./server -s",
