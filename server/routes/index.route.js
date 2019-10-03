@@ -6,7 +6,7 @@ import hljs from 'highlight.js';
 const router = express.Router();
 
 const md = new MarkdownIt({
-  highlight: function (str, lang) {
+  highlight: (str, lang) => {
     if (lang && hljs.getLanguage(lang)) {
       try {
         return `<pre class="hljs"><code>${hljs.highlight(lang, str, true).value}</code></pre>`;
