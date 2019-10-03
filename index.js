@@ -3,25 +3,16 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import cors from 'cors';
 import path from 'path';
-import fs from 'fs';
-import MarkdownIt from 'markdown-it';
+
+import indexRoute from './routes/index.route';
 
 const app = express();
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV;
-const md = new MarkdownIt();
 
-const staticPath = path.join(
-  __dirname, 
-  env === 'production' ? '..': '.', 
-  'public'
-);
-
-const viewsPath = path.join(
-  __dirname, 
-  env === 'production' ? '..': '.', 
-  'views'
-);
+const relativePath = env === 'production' ? '..': '.';
+const staticPath = path.join(__dirname, relativePath, 'public');
+const viewsPath = path.join(__dirname, relativePath, 'views');
 
 app.set('view engine', 'vash');
 app.set('views', viewsPath);
@@ -32,14 +23,7 @@ app.use(compression());
 app.use(cors());
 app.use(express.static(staticPath));
 
-app.get('/', (req, res) => {
-  fs.readFile('./markdown.md', 'utf8', (err, data) => {
-    if (err) {
-      console.log(err);
-    }
-    res.render('index', { markdown: md.render(data) });
-  });
-});
+app.use('/', indexRoute);
 
 app.listen(port, () => {
   console.log('App listening on port:', port);

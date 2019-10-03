@@ -2,6 +2,14 @@
 <html>
   <head>
     <title>Node Project Starter</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs2015.min.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
     @html.block('body')
