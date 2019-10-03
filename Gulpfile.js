@@ -8,6 +8,8 @@ gulp.task('sass', () => {
     .pipe(gulp.dest('public/styles')); 
 });
 
-gulp.task('default', ['sass'], () => {
+gulp.task('dev', ['sass'], () => {
   gulp.watch('src/styles/**/*.scss', ['sass']);
 });
+
+gulp.task('default', ['sass']);
