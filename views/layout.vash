@@ -4,6 +4,6 @@
     <title>Node Project Starter</title>
   </head>
   <body>
-    Hello...
+    @html.block('body')
   </body>
 </html>
