@@ -18,7 +18,7 @@ const md = new MarkdownIt({
 });
 
 router.get('/', (req, res) => {
-  fs.readFile(`${process.cwd()}/content/markdown.md`, 'utf8', (err, data) => {
+  fs.readFile(`${process.cwd()}/src/content/markdown.md`, 'utf8', (err, data) => {
     if (err) {
       console.log(err);
     }

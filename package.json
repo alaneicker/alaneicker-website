@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "browserSync": "browser-sync start --no-notify --proxy localhost:3000 --files src/*",
     "build": "babel -d ./dist ./server -s",
-    "start:dev": "NODE_ENV=development concurrently --kill-others 'npm run gulp' 'nodemon --exec babel-node ./server'",
+    "start:dev": "NODE_ENV=development concurrently --kill-others 'npm run gulp' 'npm run browserSync' 'nodemon --exec babel-node ./server'",
     "gulp": "gulp",
     "start": "NODE_ENV=production node ./dist"
   },
@@ -28,6 +29,7 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "browser-sync": "^2.26.7",
     "concurrently": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
