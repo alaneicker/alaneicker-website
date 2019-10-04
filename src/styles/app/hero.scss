@@ -42,11 +42,12 @@
 
   &__text-content {
     font-size: rem(18);
-    text-align: left;
     margin-top: rem(16);
   }
 
   &--condensed {
+    padding: rem(20);
+
     .c-hero__profile-image {
       width: rem(80);
       height: rem(80);
@@ -58,6 +59,10 @@
   }
 
   @media(min-width: $breakpoint-medium) {
+    &:not(&--condensed) {
+      padding: rem(80 20);
+    }
+
     &__profile-image {
       width: rem(150);
       height: rem(150);

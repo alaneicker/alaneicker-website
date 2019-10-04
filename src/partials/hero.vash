@@ -3,6 +3,9 @@
     <img class="c-hero__profile-image" src="images/profile-pic.png" alt="profile image" />
     <h1 class="c-hero__heading">@model.heroHeading</h1>
     <h2 class="c-hero__subheading">@model.heroSubHeading</h2>
-    <div class="c-hero__text-content">@model.heroContent</div>
+    <div class="c-hero__text-content">
+      <p class="text-align-left">@model.heroContent</p>
+      <a href="/about" class="btn btn--tertiary">Learn More</a>
+    </div>
   </div>
 </div>
