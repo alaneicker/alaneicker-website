@@ -31,7 +31,7 @@
           <footer class="c-footer">
             <div class="c-footer__content">
               <div>@model.copyright</div>
-              <div>@model.phone &bull; @model.email</div>
+              <div>@model.phone &bull; <a class="is-inverse" href="mailto:@model.email">@model.email</a></div>
             </div>
           </footer>
         </div>

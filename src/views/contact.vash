@@ -1,0 +1,17 @@
+@html.extend('layout',function (model) {
+	@html.block('body',function (model) {
+		<p class="text-align-center text-size-20 text-bold margin-bottom-36">Feel free to email me at <a href="mailto:@model.email">@model.email</a>. You can also find me on social media.</p>
+		<ul class="social-media-list">
+			@model.socialMedia.forEach(function (media) {
+				<li class="social-media-list__item">
+					<svg fill="@media.svg.fill" enableBackground="new 0 0 24 24" height="65" viewBox="@media.svg.viewBox" xmlns="http://www.w3.org/2000/svg">
+						<path d="@media.svg.path"/>
+					</svg>
+					<h3 class="social-media-list__heading">@media.heading</h3>
+					<p>@html.raw(media.desription)</p>
+					<a class="btn btn--tertiary" rel="noopener" target="_blank" href="@media.link.url">@media.link.linkText</a>
+				</li>
+			});
+		</ul>
+	})
+})
