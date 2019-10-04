@@ -5,9 +5,7 @@
   var cacheName = 'node-alaneicker-com';
   var filesToCache = [
     './',
-    '/styles/app.css',
-    '/scripts/app.js',
-    '/images/brew-review-home-min.png'
+    './styles/app.css',
   ];
 
   self.addEventListener('install', e => {
