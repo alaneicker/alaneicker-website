@@ -1,0 +1,78 @@
+.c-hero {
+  background: $gray-100;
+  padding: rem(20);
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0; 
+    right: 0;
+    background: transparent center/cover no-repeat url($hero-bg);
+    opacity: 0.08;
+  }
+
+  &__content {
+    text-align: center;
+    max-width: rem(960);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__profile-image {
+    width: rem(100);
+    height: rem(100);
+    border-radius: 50%;
+  }
+
+  &__heading {
+    font-size: rem(35);
+    line-height: 1.2;
+  }
+
+  &__subheading {
+    font-size: rem(25);
+    line-height: 1.3;
+    color: $red-100;
+  }
+
+  &__text-content {
+    font-size: rem(18);
+    text-align: left;
+    margin-top: rem(16);
+  }
+
+  &--condensed {
+    .c-hero__profile-image {
+      width: rem(80);
+      height: rem(80);
+    }
+
+    .c-hero__heading {
+      font-size: rem(20);
+    }
+  }
+
+  @media(min-width: $breakpoint-medium) {
+    &__profile-image {
+      width: rem(150);
+      height: rem(150);
+    }
+
+    &__heading {
+      font-size: rem(45);
+    }
+  
+    &__subheading {
+      font-size: rem(35);
+    }
+
+    &__text-content {
+      font-size: rem(20);
+    }
+  }
+}

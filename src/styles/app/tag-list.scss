@@ -1,0 +1,13 @@
+.c-taglist {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    background: $blue-500;
+    padding: rem(4 8);
+    color: $white;
+    border-radius: rem(4);
+    margin: rem(0 8 8 0);
+    font-weight: $font-medium;
+  }
+}
