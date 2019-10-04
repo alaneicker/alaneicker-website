@@ -6,6 +6,7 @@ import path from 'path';
 
 import indexRoute from './routes/index.route';
 import featuredProjectRoute from './routes/featured-project.route';
+import aboutRoute from './routes/about.route';
 
 import baseContent from '../src/content/base.json';
 import mainNavLinks from '../src/content/main-nav.json';
@@ -42,6 +43,7 @@ app.use(express.static(staticPath));
 
 app.use('/', indexRoute);
 app.use('/', featuredProjectRoute)
+app.use('/', aboutRoute)
 
 app.listen(port, () => {
   console.log('App listening on port:', port);

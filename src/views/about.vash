@@ -1,0 +1,29 @@
+@html.extend('layout',function (model) {
+	@html.block('body',function (model) {
+		<div>
+			@html.raw(model.intoSectionText)
+
+			<h2 class="text-align-center margin-bottom-20 bordered">Areas Of Expertise</h2>
+
+			@model.areasOfExpertise.forEach(function (expertise) {
+				<div class="flex@@medium flex--nowrap flex--right-col-fixed@@200 flex--hr-24 margin-bottom-16">
+					<h3 class="margin-bottom-4">@expertise.category</h3>
+					<ul class="c-taglist">
+						@expertise.skills.forEach(function (skill) {
+							<li>@skill</li>
+						});
+					</ul>
+				</div>
+			})
+
+			<h2 class="text-align-center margin-top-20 margin-bottom-20 bordered">Resum&eacute;</h2>
+
+			<div class="text-align-center">
+        <p>@html.raw(model.resumeSectionText)</p>
+        <a class="btn btn--tertiary" rel="noopener" target="_blank" href="https://docs.google.com/document/d/1oa9eYW4_efYdXe78W1IGLUhac9ecgCJ1QzaCxB5maFI/edit">
+          Download Resum‌é
+        </a>
+      </div>
+		</div>
+	})
+})
