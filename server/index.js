@@ -5,6 +5,14 @@ import cors from 'cors';
 import path from 'path';
 
 import indexRoute from './routes/index.route';
+import featuredProjectRoute from './routes/featured-project.route';
+
+import baseContent from '../src/content/base.json';
+
+export const model = {
+  copyright: `&copy; ${new Date().getFullYear()} Alan Eicker`,
+  ...baseContent,
+};
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -23,6 +31,7 @@ app.use(cors());
 app.use(express.static(staticPath));
 
 app.use('/', indexRoute);
+app.use('/', featuredProjectRoute)
 
 app.listen(port, () => {
   console.log('App listening on port:', port);

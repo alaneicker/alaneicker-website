@@ -8,7 +8,13 @@ gulp.task('sass', () => {
     .pipe(gulp.dest('public/styles')); 
 });
 
-gulp.task('dev', ['sass'], () => {
+gulp.task('copy-images', function() {
+  return gulp
+    .src('src/images/**/*')
+    .pipe(gulp.dest('public/images'));
+});
+
+gulp.task('dev', ['sass', 'copy-images'], () => {
   gulp.watch('src/styles/**/*.scss', ['sass']);
 });
 

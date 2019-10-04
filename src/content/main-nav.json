@@ -1,0 +1,6 @@
+[
+  { "url": "/", "text": "Home" },
+  { "url": "/about", "text": "About" },
+  { "url": "/featured-project", "text": "Featured" },
+  { "url": "/contact-me", "text": "Contact" }
+]
