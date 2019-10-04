@@ -1,5 +1,9 @@
 .code-sample {
 
+  pre {
+    margin-bottom: rem(16);
+  }
+
   code {
     line-height: 1.4;
     font-family: 'Source Code Pro', monospace, 'Courier New', Courier;
@@ -12,17 +16,17 @@
 
   h2:first-of-type {
     text-align: center;
-    font-size: 32px;
+    font-size: rem(32);
     border-bottom: 1px solid #ddd;
-    padding-bottom: 8px;
-    margin-bottom: 32px;
+    padding-bottom: rem(8);
+    margin-bottom: rem(32);
   }
   
   h2 {
-    font-size: 24px;
+    font-size: rem(24);
   }
   
   h3 {
-    font-size: 20px;
+    font-size: rem(20);
   }
 }

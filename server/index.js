@@ -8,10 +8,12 @@ import indexRoute from './routes/index.route';
 import featuredProjectRoute from './routes/featured-project.route';
 
 import baseContent from '../src/content/base.json';
+import mainNavLinks from '../src/content/main-nav.json';
 
 export const model = {
-  copyright: `&copy; ${new Date().getFullYear()} Alan Eicker`,
   ...baseContent,
+  copyright: `&copy; ${new Date().getFullYear()} Alan Eicker`,
+  mainNavLinks,
 };
 
 const app = express();

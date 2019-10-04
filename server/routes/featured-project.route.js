@@ -2,6 +2,8 @@ import express from 'express';
 import fs from 'fs';
 import MarkdownIt from 'markdown-it';
 import hljs from 'highlight.js';
+import { model } from '../';
+import featuredProjectContent from '../../src/content/featured-project.json';
 
 const router = express.Router();
 
@@ -22,7 +24,7 @@ router.get('/featured-project', (req, res) => {
     if (err) {
       console.log(err);
     }
-    res.render('featured-project', { markdown: md.render(data) });
+    res.render('featured-project', { ...model, ...featuredProjectContent, markdown: md.render(data) });
   });
 });
 

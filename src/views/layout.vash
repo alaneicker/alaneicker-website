@@ -9,7 +9,9 @@
       <header class="l-page__header">
         <nav>
           <ul class="c-main-nav">
-            <li><a class="" href=""></a></li>
+            @model.mainNavLinks.forEach(function (link) {
+              <li><a class="" href="@link.url">@link.text</a></li>
+            })
           </ul>
         </nav>
       </header>
