@@ -42,7 +42,7 @@ h6 {
   font-family: $font-noto-serif;
 
   &.bordered {
-    border-bottom: rem(1) solid $border-gray;
+    border-bottom: rem(1) solid $light-gray;
     padding-bottom: rem(4);
     margin-bottom: rem(24);
   }
@@ -50,7 +50,7 @@ h6 {
 
 // horizontal rule
 hr {
-  background: $border-gray;
+  background: $light-gray;
   height: rem(1);
   border: 0;
   width: 1005;

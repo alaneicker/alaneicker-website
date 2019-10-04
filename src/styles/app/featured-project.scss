@@ -33,5 +33,16 @@
   h2, h3, h4, h5, h6 {
     margin-bottom: rem(16);
     font-weight: $font-semibold;
+
+    code {
+      font-size: rem(18);
+      font-weight: $font-semibold;
+      padding: rem(4 8);
+      background: $gray-100;
+    }
+  }
+
+  ol, ul {
+    margin-bottom: rem(16);
   }
 }
