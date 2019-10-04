@@ -6,12 +6,12 @@
 			<h2 class="text-align-center margin-bottom-20 bordered">Areas Of Expertise</h2>
 
 			@model.areasOfExpertise.forEach(function (expertise) {
-				<div class="flex@@medium flex--nowrap flex--right-col-fixed@@200 flex--hr-24 margin-bottom-16">
+				<div class="flex@@medium flex@@medium--nowrap flex--right-col-fixed@@200 flex--hr-24 margin-bottom-16">
 					<h3 class="margin-bottom-4">@expertise.category</h3>
 					<ul class="c-taglist">
 						@expertise.skills.forEach(function (skill) {
 							<li>@skill</li>
-						});
+						})
 					</ul>
 				</div>
 			})
