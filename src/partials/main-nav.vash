@@ -1,0 +1,7 @@
+<nav>
+  <ul class="c-main-nav">
+    @model.mainNavLinks.forEach(function (link) {
+      <li><a class="@link.class" href="@link.url">@link.text</a></li>
+    })
+  </ul>
+</nav>

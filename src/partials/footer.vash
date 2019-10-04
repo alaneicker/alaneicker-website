@@ -1,0 +1,6 @@
+<footer class="c-footer">
+  <div class="c-footer__content">
+    <div>@html.raw(model.copyright)</div>
+    <div>@model.phone &bull; <a class="is-inverse" href="mailto:@model.email">@model.email</a></div>
+  </div>
+</footer>
