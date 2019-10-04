@@ -14,8 +14,17 @@ gulp.task('copy-images', function() {
     .pipe(gulp.dest('public/images'));
 });
 
+gulp.task('copy', function() {
+  return gulp
+    .src([
+      'src/pwa/**/*',
+      'src/favicon.ico',
+    ])
+    .pipe(gulp.dest('public'));
+});
+
 gulp.task('dev', ['sass', 'copy-images'], () => {
   gulp.watch('src/styles/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'copy', 'copy-images']);

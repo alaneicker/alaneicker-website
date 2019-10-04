@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "browserSync": "browser-sync start --no-notify --proxy localhost:3000 --port 3002 --files src/*",
-    "build": "babel -d ./dist ./server -s",
+    "build": "babel -d ./dist ./server -s && gulp",
     "start:dev": "NODE_ENV=development concurrently --kill-others 'gulp dev' 'npm run browserSync' 'nodemon --exec babel-node ./server'",
     "start": "NODE_ENV=production node ./dist",
     "postinstall": "gulp"
