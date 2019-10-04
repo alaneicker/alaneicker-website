@@ -3,6 +3,7 @@ import fs from 'fs';
 import MarkdownIt from 'markdown-it';
 import hljs from 'highlight.js';
 import { model } from '../';
+import { setActiveNavLink } from '../';
 import featuredProjectContent from '../../src/content/featured-project.json';
 
 const router = express.Router();
@@ -20,11 +21,13 @@ const md = new MarkdownIt({
 });
 
 router.get('/featured-project', (req, res) => {
+  const mainNavLinks = setActiveNavLink(model.mainNavLinks, req.path);
+  
   fs.readFile(`${process.cwd()}/src/content/markdown.md`, 'utf8', (err, data) => {
     if (err) {
       console.log(err);
     }
-    res.render('featured-project', { ...model, ...featuredProjectContent, markdown: md.render(data) });
+    res.render('featured-project', { ...model, ...featuredProjectContent, mainNavLinks, markdown: md.render(data) });
   });
 });
 
