@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
     ...model, 
     ...homeContent,
     mainNavLinks, 
+    isHome: true,
   });
 });
 
