@@ -1,6 +1,6 @@
 ## JavaScript Form Validator
 
-The JavaScript Form Validator is a simple utility for managing form validation through simple configurations rules. 
+The JavaScript Form Validator is a simple API for managing form validation through simple configurations rules. 
 
 ### Installing the Form Validator
 
