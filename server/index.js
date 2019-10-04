@@ -1,6 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import compression from 'compression';
+import sslRedirect from 'heroku-ssl-redirect';
+
 import cors from 'cors';
 import path from 'path';
 
@@ -28,7 +30,6 @@ export const setActiveNavLink = (links, path) => {
 
 const app = express();
 const port = process.env.PORT || 3000;
-const env = process.env.NODE_ENV;
 
 const staticPath = path.join(__dirname, '..', 'public');
 const viewsPath = path.join(__dirname, '..', 'src/views');
@@ -38,6 +39,7 @@ app.set('views', viewsPath);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(sslRedirect());
 app.use(compression());
 app.use(cors());
 app.use(express.static(staticPath));
