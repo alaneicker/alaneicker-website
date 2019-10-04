@@ -8,7 +8,11 @@ const router = express.Router();
 router.get('/', (req, res) => {
   const mainNavLinks = setActiveNavLink(model.mainNavLinks, req.path);
 
-  res.render('index', { ...model, mainNavLinks, ...homeContent });
+  res.render('index', { 
+    ...model, 
+    ...homeContent,
+    mainNavLinks, 
+  });
 });
 
 export default router;

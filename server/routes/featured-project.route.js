@@ -27,7 +27,13 @@ router.get('/featured-project', (req, res) => {
     if (err) {
       console.log(err);
     }
-    res.render('featured-project', { ...model, ...featuredProjectContent, mainNavLinks, markdown: md.render(data) });
+    
+    res.render('featured-project', { 
+      ...model, 
+      ...featuredProjectContent, 
+      mainNavLinks, 
+      markdown: md.render(data) 
+    });
   });
 });
 
