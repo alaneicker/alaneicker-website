@@ -1,5 +1,5 @@
 .c-hero {
-  background: $gray-100;
+  background: $black;
   padding: rem(20);
   position: relative;
 
@@ -12,7 +12,7 @@
     bottom: 0; 
     right: 0;
     background: transparent center/cover no-repeat url($hero-bg);
-    opacity: 0.08;
+    opacity: 0.7;
   }
 
   &__content {
@@ -30,6 +30,7 @@
   }
 
   &__heading {
+    color: $white;
     font-size: rem(35);
     line-height: 1.2;
   }
@@ -43,6 +44,7 @@
   &__text-content {
     font-size: rem(18);
     margin-top: rem(16);
+    color: $white;
   }
 
   &--condensed {
