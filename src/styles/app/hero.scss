@@ -1,6 +1,6 @@
 .c-hero {
   background: $black;
-  padding: rem(20);
+  padding: rem(40 20);
   position: relative;
 
   &:before {
@@ -63,7 +63,7 @@
 
   @media(min-width: $breakpoint-medium) {
     &:not(&--condensed) {
-      padding: rem(80 20);
+      padding: rem(120 20);
     }
 
     &__profile-image {

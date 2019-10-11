@@ -5,9 +5,6 @@
     <h2 class="c-hero__subheading">@model.heroSubHeading</h2>
     <div class="c-hero__text-content">
       <p class="text-align-left">@model.heroContent</p>
-      @if(model.isHome) {
-        <a href="/about" class="btn btn--tertiary" title="Learn more about Alan Eicker">Learn More</a>
-      }
     </div>
   </div>
 </div>
