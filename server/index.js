@@ -2,8 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import compression from 'compression';
 import sslRedirect from 'heroku-ssl-redirect';
-import spdy from 'spdy';
-import fs from 'fs';
 
 import cors from 'cors';
 import path from 'path';
@@ -30,11 +28,6 @@ export const setActiveNavLink = (links, path) => {
   });
 };
 
-const spdyOptions = {
-  key: fs.readFileSync(__dirname + '/key.pem', 'utf8'),
-  cert: fs.readFileSync(__dirname + '/server.crt', 'utf8'),
-};
-
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -56,13 +49,6 @@ app.use('/', featuredProjectRoute);
 app.use('/', aboutRoute);
 app.use('/', contactRoute);
 
-spdy
-  .createServer(spdyOptions, app)
-  .listen(port, (error) => {
-    if (error) {
-      console.error(error)
-      return process.exit(1)
-    } else {
-      console.log('Server listening on port:', port);
-    }
-  });
+app.listen(port, () => {
+  console.log('App listening on port:', port);
+});
