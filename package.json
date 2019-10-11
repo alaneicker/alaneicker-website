@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "browserSync": "browser-sync start --no-notify --proxy localhost:3000 --port 3002 --files src/*",
+    "browserSync": "browser-sync start --no-notify --proxy https://localhost:3000 --port 3002 --files src/*",
     "build": "babel -d ./dist ./server -s && gulp",
     "start:dev": "NODE_ENV=development concurrently --kill-others 'gulp dev' 'npm run browserSync' 'nodemon --exec babel-node ./server'",
     "start": "NODE_ENV=production node ./dist",
@@ -23,6 +23,7 @@
     "highlight.js": "^9.15.10",
     "markdown-it": "^10.0.0",
     "path": "^0.12.7",
+    "spdy": "^4.0.1",
     "vash": "^0.12.6"
   },
   "devDependencies": {
