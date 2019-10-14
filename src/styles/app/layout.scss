@@ -27,14 +27,5 @@
 
   &__content {
     width: 100%;
-    max-width: rem($site-width);
-    padding: rem(32 20);
-    margin: rem(0 auto);
-  }
-
-  @media(min-width: $breakpoint-medium) {
-    &__content {
-      width: 90%;
-    }
   }
 }

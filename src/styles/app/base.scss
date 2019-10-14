@@ -1,5 +1,5 @@
 body {
-  font-size: rem(17);
+  font-size: rem(18);
   color: $black;
   -webkit-overflow-scrolling: touch;
   overflow-y: hidden;
@@ -12,11 +12,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: rem(36);
+  font-size: rem(28);
 }
 
 h3 {
-  font-size: rem(24);
+  font-size: rem(20);
 }
 
 p, li {
@@ -33,5 +33,16 @@ a {
 }
 
 section {
-  padding: rem(40 20);
+  padding: rem(60 20);
+}
+
+@media(min-width: $breakpoint-medium) {
+  h2 {
+    font-size: rem(36);
+  }
+  
+  h3 {
+    font-size: rem(24);
+  }
+  
 }

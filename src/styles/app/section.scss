@@ -1,3 +1,18 @@
 .section {
   background: $white;
+
+  &__content {
+    max-width: rem($site-width);
+    margin: rem(0 auto);
+  }
+
+  &--dark {
+    background: $aqua-100;
+  }
+
+  @media(min-width: $breakpoint-medium) {
+    &__content {
+      width: 90%;
+    }
+  }
 }

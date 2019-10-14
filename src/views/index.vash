@@ -1,27 +1,39 @@
 @html.extend('layout',function (model) {
 	@html.block('body',function (model) {
 		<section id="about" class="section">
-			<div class="heading">
-				<h2>A Bit About Me</h2>
-				<div class="divider divider--dark"></div>
+			<div class="section__content">
+					<div class="heading">
+					<h2>A Bit About Me</h2>
+					<div class="divider divider--dark"></div>
+					<div class="flex@@medium flex--equalColumns margin-top-24">
+						<div>@html.raw(model.intoText)</div>
+						<div></div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section id="featured" class="section">
-			<div class="heading">
-				<h2>Featured Project</h2>
-				<div class="divider divider--dark"></div>
+		<section id="featured" class="section section--dark">
+			<div class="section__content">
+				<div class="heading">
+					<h2>Featured Project</h2>
+					<div class="divider divider--dark"></div>
+				</div>
 			</div>
 		</section>
 		<section id="resume" class="section">
-			<div class="heading">
-				<h2>Resum&eacute;</h2>
-				<div class="divider divider--dark"></div>
+			<div class="section__content">
+				<div class="heading">
+					<h2>Resum&eacute;</h2>
+					<div class="divider divider--dark"></div>
+				</div>
 			</div>
 		</section>
 		<section id="contact" class="section">
-			<div class="heading">
-				<h2>Get in Touch</h2>
-				<div class="divider divider--dark"></div>
+			<div class="section__content">
+				<div class="heading">
+					<h2>Get in Touch</h2>
+					<div class="divider divider--dark"></div>
+				</div>
 			</div>
 		</section>
 	})
