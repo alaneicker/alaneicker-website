@@ -25,10 +25,12 @@
   & > :last-of-type {
     display: block;
 
-    svg {
+    img {
       fill: $white;
       position: relative;
       top: rem(6);
+      width: rem(24);
+      height: rem(24);
     }
   }  
 
