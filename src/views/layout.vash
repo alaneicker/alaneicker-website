@@ -65,6 +65,17 @@
 
       ('serviceWorker' in navigator && registerServiceWorker());
       ('beforeinstallprompt' in window && addBeforeInstallPromtEvent());
+
+      const mainNav = document.querySelector('#main-nav');
+      let links = [];
+      
+      [].forEach.call(document.querySelectorAll('a'), link => {
+        links = [...links, link];
+        link.addEventListener('click', e => {
+          links.forEach(l => l.classList.remove('is-active'));
+          link.classList.add('is-active');
+        })
+      });
     </script>
   </body>
 </html>

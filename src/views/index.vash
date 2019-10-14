@@ -6,5 +6,11 @@
 				<div class="divider divider--dark"></div>
 			</div>
 		</section>
+		<section id="featured" class="section">
+			<div class="heading">
+				<h2>Featured Project</h2>
+				<div class="divider divider--dark"></div>
+			</div>
+		</section>
 	})
 })

@@ -1,10 +1,10 @@
 <nav>
-  <ul class="c-main-nav">
+  <ul id="main-nav" class="c-main-nav">
     @model.mainNavLinks.forEach(function (link) {
       <li><a href="@link.url" title="@link.title">@html.raw(link.text)</a></li>
     })
     <li>
-      <a href="#" title="toggle mobile naviation" onclick="">
+      <a href="#" title="toggle mobile naviation">
         <img src="/images/menu.svg" title="Menu icon">
       </a>
     </li>
