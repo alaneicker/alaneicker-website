@@ -1,6 +1,8 @@
 body {
   font-size: rem(17);
   color: $black;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
