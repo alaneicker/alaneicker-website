@@ -25,6 +25,7 @@
   <body>
     <div class="l-page">
       <header class="l-page__header">
+        <a class="logo" href="/">Alan Eicker</a>
         @html.include("../partials/main-nav")
       </header>
       <div class="l-page__body">

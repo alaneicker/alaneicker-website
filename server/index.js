@@ -7,9 +7,6 @@ import cors from 'cors';
 import path from 'path';
 
 import indexRoute from './routes/index.route';
-import featuredProjectRoute from './routes/featured-project.route';
-import aboutRoute from './routes/about.route';
-import contactRoute from './routes/contact.router';
 
 import baseContent from '../src/content/base.json';
 import mainNavLinks from '../src/content/main-nav.json';
