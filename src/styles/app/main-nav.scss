@@ -2,7 +2,7 @@
   display: flex;
 
   & > * > a {
-    color: $black;
+    color: $white;
     text-decoration: none;
     font-weight: $font-semibold;
     display: block;
@@ -11,7 +11,7 @@
 
     &.is-active,
     &:hover {
-      color: $red-100;
+      color: #1abc9c;
     }
   }
 }

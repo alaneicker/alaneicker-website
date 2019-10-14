@@ -45,9 +45,6 @@ app.use(cors());
 app.use(express.static(staticPath));
 
 app.use('/', indexRoute);
-app.use('/', featuredProjectRoute);
-app.use('/', aboutRoute);
-app.use('/', contactRoute);
 
 app.listen(port, () => {
   console.log('App listening on port:', port);
