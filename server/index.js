@@ -17,14 +17,6 @@ export const model = {
   mainNavLinks,
 };
 
-export const setActiveNavLink = (links, path) => {
-  return links.map(link => {
-    return link.url === path
-      ? { ...link, class: 'is-active' }
-      : link;
-  });
-};
-
 const app = express();
 const port = process.env.PORT || 3000;
 
