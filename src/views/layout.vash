@@ -31,11 +31,9 @@
       <div class="l-page__body">
         @html.include("../partials/hero")
         <div class="l-page__main">
-          @if(!model.isHome) {
-            <div class="l-page__content">
-              @html.block('body')
-            </div>
-          }
+          <div class="l-page__content">
+            @html.block('body')
+          </div>
           @html.include("../partials/footer")
         </div>
       </div>

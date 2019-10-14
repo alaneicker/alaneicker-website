@@ -21,4 +21,13 @@
   &:after {
     right: 0;
   }
+
+  &--dark {
+    background-image: url('../images/star-dark.svg');
+
+    &:before,
+    &:after {
+      background: $black;
+    }
+  }
 }

@@ -1,17 +1,20 @@
 body {
   font-size: rem(17);
+  color: $black;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: $font-bold;
 }
 
 h2 {
-  font-size: rem(24);
+  font-size: rem(36);
 }
 
 h3 {
-  font-size: rem(20);
+  font-size: rem(24);
 }
 
 p, li {
@@ -25,4 +28,8 @@ a {
   &.is-inverse:hover {
     color: $white;
   }
+}
+
+section {
+  padding: rem(40 20);
 }

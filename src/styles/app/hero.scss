@@ -3,6 +3,9 @@
   padding: rem(40 20);
   position: relative;
   display: flex;
+  align-items: center;
+  height: calc(100vh - 60px);
+  color: $white;
 
   &__content {
     text-align: center;
@@ -16,7 +19,6 @@
   }
 
   &__heading {
-    color: $white;
     font-size: rem(40);
     line-height: 1.2;
     font-weight: $font-bold;
@@ -27,7 +29,6 @@
     font-size: rem(25);
     line-height: 1.3;
     font-weight: $font-medium;
-    color: $white;
   }
 
   &__text-content {
@@ -36,24 +37,8 @@
     color: $white;
   }
 
-  &--condensed {
-    padding: rem(20);
-
-    .c-hero__profile-image {
-      width: rem(80);
-      height: rem(80);
-    }
-
-    .c-hero__heading {
-      font-size: rem(20);
-    }
-  }
-
   @media(min-width: $breakpoint-medium) {
-    &:not(&--condensed) {
-      padding: rem(80 20);
-    }
-    
+
     &__heading {
       font-size: rem(60);
     }

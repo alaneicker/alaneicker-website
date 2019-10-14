@@ -3,6 +3,7 @@
     <img class="margin-bottom-16" src="/images/ninja.svg" width="200" alt="Ninja">
     <h1 class="c-hero__heading">@model.heroHeading</h1>
     <div class="divider"></div>
-    <h2 class="c-hero__subheading">@model.heroSubHeading</h2>
+    <p class="c-hero__subheading">@model.heroSubHeading</p>
+    <p class="text-size-20">A deadly combination of HTML, CSS &amp; JavaScript.</p>
   </div>
 </div>
