@@ -12,5 +12,17 @@
 				<div class="divider divider--dark"></div>
 			</div>
 		</section>
+		<section id="resume" class="section">
+			<div class="heading">
+				<h2>Resum&eacute;</h2>
+				<div class="divider divider--dark"></div>
+			</div>
+		</section>
+		<section id="contact" class="section">
+			<div class="heading">
+				<h2>Get in Touch</h2>
+				<div class="divider divider--dark"></div>
+			</div>
+		</section>
 	})
 })

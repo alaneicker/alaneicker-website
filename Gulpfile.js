@@ -38,6 +38,7 @@ gulp.task('copy', function() {
 });
 
 gulp.task('dev', ['sass', 'copy-images', 'copy-scripts'], () => {
+  gulp.watch('src/scripts/*.js', ['copy-scripts']);
   gulp.watch('src/styles/**/*.scss', ['sass']);
 });
 
