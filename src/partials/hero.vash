@@ -1,9 +1,10 @@
 <div class="c-hero @(model.isHome !== true ? 'c-hero--condensed' : '')"> 
   <div class="c-hero__content">
+    <img src="https://image.flaticon.com/icons/svg/435/435010.svg" width="200" alt="Ninja">
     <h1 class="c-hero__heading">@model.heroHeading</h1>
     <h2 class="c-hero__subheading">@model.heroSubHeading</h2>
-    <div class="c-hero__text-content">
+    <!--<div class="c-hero__text-content">
       <p class="text-align-left">@model.heroContent</p>
-    </div>
+    </div>-->
   </div>
 </div>

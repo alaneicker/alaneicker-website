@@ -1,7 +1,7 @@
 <nav>
   <ul class="c-main-nav">
     @model.mainNavLinks.forEach(function (link) {
-      <li><a class="@link.class" href="@link.url" title="@link.title">@link.text</a></li>
+      <li><a class="@link.class" href="@link.url" title="@link.title">@html.raw(link.text)</a></li>
     })
     <li>
       <a href="#" title="toggle mobile naviation" onclick="">

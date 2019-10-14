@@ -3,15 +3,18 @@
 
   & > * > a {
     color: $white;
+    font-size: rem(16);
     text-decoration: none;
-    font-weight: $font-semibold;
+    font-weight: $font-bold;
     display: block;
     line-height: rem(60);
     padding: rem(0 10);
+    text-transform: uppercase;
 
     &.is-active,
     &:hover {
-      color: $aqua-100;
+      background: $aqua-100;
+      color: $white;
     }
   }
 
@@ -26,10 +29,6 @@
       fill: $white;
       position: relative;
       top: rem(6);
-    }
-
-    &:hover svg {
-      fill: $aqua-100;
     }
   }  
 
