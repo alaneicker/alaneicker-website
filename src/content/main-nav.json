@@ -1,6 +1,6 @@
 [
-  { "url": "/about", "text": "About", "title": "Go to about section" },
-  { "url": "/featured-project", "text": "Featured", "title": "Go to Featured project section" },
-  { "url": "/resume", "text": "Resum&eacute;", "title": "Go to resume section" },
-  { "url": "/contact-me", "text": "Contact", "title": "Go to contact section" }
+  { "url": "#about", "text": "About", "title": "Go to about section" },
+  { "url": "#featured", "text": "Featured", "title": "Go to Featured project section" },
+  { "url": "#resume", "text": "Resum&eacute;", "title": "Go to resume section" },
+  { "url": "#contact", "text": "Contact", "title": "Go to contact section" }
 ]
