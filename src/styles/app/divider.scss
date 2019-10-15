@@ -1,6 +1,6 @@
 .divider {
   height: rem(36);
-  width: rem(300);
+  width: rem(280);
   background: no-repeat center center/40px url('../images/star.svg');
   position: relative;
   margin: rem(8 0);
@@ -11,7 +11,7 @@
     display: block;
     height: rem(4);
     background: $white;
-    width: rem(120);
+    width: rem(110);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
