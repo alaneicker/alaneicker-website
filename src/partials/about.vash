@@ -10,12 +10,12 @@
         </div>
         <div>
           <h3 class="margin-bottom-16">Core Skills</h3>
-          <ul class="skill-list">
+          <ul class="skill-chart">
             @model.skills.forEach(function (skill) {
               @{ var percentage = skill.rank / 10 * 100 }
-              <li class="skill-list__track">
-                <div class="skill-list__label">@skill.name</div>
-                <div class="skill-list__bar" style="width: calc(@percentage% - 120px)">
+              <li class="skill-chart__track">
+                <div class="skill-chart__label">@skill.name</div>
+                <div class="skill-chart__bar" style="width: calc(@percentage% - 88px)">
                   <span>@percentage%</span>
                 </div>
               </li>
