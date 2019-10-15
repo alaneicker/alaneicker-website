@@ -4,7 +4,7 @@
       <h2>A Bit About Me</h2>
       <div class="divider divider--dark"></div>
       <div class="flex@@medium flex--equalColumns flex--hr-24 margin-top-24">
-        <div>
+        <div class="margin-bottom-24 margin-collapse@@medium">
           <h3 class="margin-bottom-16">My Story</h3>
           @html.raw(model.intoText)
         </div>
