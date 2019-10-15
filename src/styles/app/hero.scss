@@ -1,5 +1,11 @@
 .c-hero {
-  background: #1abc9c;
+  // background: #1abc9c;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1abc9c+0,158e9b+100 */
+  background: #1abc9c; /* Old browsers */
+  background: -moz-linear-gradient(top, $aqua-100 0%, $aqua-300 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $aqua-100 0%,$aqua-300 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $aqua-100 0%,$aqua-300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1abc9c', endColorstr='#158e9b',GradientType=0 ); /* IE6-9 */
   padding: rem(40 20);
   position: relative;
   display: flex;
