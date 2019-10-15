@@ -2,7 +2,7 @@
 	@html.block('body',function (model) {
 		@html.include("../partials/about")
 		@html.include("../partials/featured")
-		@html.include("../partials/resume")
-		@html.include("../partials/contact")
+		<!--@html.include("../partials/resume")
+		@html.include("../partials/contact")-->
 	})
 })
