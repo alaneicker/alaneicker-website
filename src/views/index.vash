@@ -5,9 +5,21 @@
 					<div class="heading">
 					<h2>A Bit About Me</h2>
 					<div class="divider divider--dark"></div>
-					<div class="flex@@medium flex--equalColumns margin-top-24">
+					<div class="flex@@medium flex--equalColumns flex--hr-24 margin-top-24">
 						<div>@html.raw(model.intoText)</div>
-						<div></div>
+						<div>
+							<ul class="skill-list">
+								@model.skills.forEach(function (skill) {
+									@{ var percentage = skill.rank / 10 * 100 }
+									<li class="skill-list__track">
+										<div class="skill-list__label">@skill.name</div>
+										<div class="skill-list__bar" style="width: calc(@percentage% - 120px)">
+											<span>@percentage%</span>
+										</div>
+									</li>
+								})
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
