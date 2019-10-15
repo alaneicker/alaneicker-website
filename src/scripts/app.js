@@ -54,7 +54,7 @@ document.querySelector('#page-body').addEventListener('scroll', e => {
 
   const scrollY = e.target.scrollTop;
   const aboutTopOffset = getTopOffset('#about');
-  const featuredTopOffset = getTopOffset('#featured');
+  // const featuredTopOffset = getTopOffset('#featured');
   const resumeTopOffset = getTopOffset('#resume');
   const contactTopOffset = getTopOffset('#contact');
 
@@ -68,9 +68,9 @@ document.querySelector('#page-body').addEventListener('scroll', e => {
     selectedNavItem = '#about';
   } 
   
-  if (scrollY >= featuredTopOffset) {
-    selectedNavItem = '#featured';
-  } 
+  // if (scrollY >= featuredTopOffset) {
+  //   selectedNavItem = '#featured';
+  // } 
 
   if (scrollY >= resumeTopOffset) {
     selectedNavItem = '#resume';

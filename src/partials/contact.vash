@@ -1,7 +1,7 @@
-<section id="contact" class="section section--aqua">
+<section id="contact" class="section">
   <div class="section__content">
     <div class="heading">
-      <h2 class="text-color-white">Get in Touch</h2>
+      <h2>Get in Touch</h2>
       <div class="divider"></div>
     </div>
   </div>

@@ -6,8 +6,16 @@
     margin: rem(0 auto);
   }
 
+  &--navy {
+    background: $navy-100;
+  }
+
   &--aqua {
     background: $aqua-200;
+  }
+
+  &--light-gray {
+    background: $gray-100;
   }
 
   @media(min-width: $breakpoint-medium) {
