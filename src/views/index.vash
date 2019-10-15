@@ -1,52 +1,8 @@
 @html.extend('layout',function (model) {
 	@html.block('body',function (model) {
-		<section id="about" class="section">
-			<div class="section__content">
-					<div class="heading">
-					<h2>A Bit About Me</h2>
-					<div class="divider divider--dark"></div>
-					<div class="flex@@medium flex--equalColumns flex--hr-24 margin-top-24">
-						<div>@html.raw(model.intoText)</div>
-						<div>
-							<ul class="skill-list">
-								@model.skills.forEach(function (skill) {
-									@{ var percentage = skill.rank / 10 * 100 }
-									<li class="skill-list__track">
-										<div class="skill-list__label">@skill.name</div>
-										<div class="skill-list__bar" style="width: calc(@percentage% - 120px)">
-											<span>@percentage%</span>
-										</div>
-									</li>
-								})
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="featured" class="section section--dark">
-			<div class="section__content">
-				<div class="heading">
-					<h2 class="text-color-white">Featured Project</h2>
-					<div class="divider"></div>
-				</div>
-			</div>
-		</section>
-		<section id="resume" class="section">
-			<div class="section__content">
-				<div class="heading">
-					<h2>Resum&eacute;</h2>
-					<div class="divider divider--dark"></div>
-				</div>
-			</div>
-		</section>
-		<section id="contact" class="section">
-			<div class="section__content">
-				<div class="heading">
-					<h2>Get in Touch</h2>
-					<div class="divider divider--dark"></div>
-				</div>
-			</div>
-		</section>
+		@html.include("../partials/about")
+		@html.include("../partials/featured")
+		@html.include("../partials/resume")
+		@html.include("../partials/contact")
 	})
 })

@@ -6,8 +6,8 @@
     margin: rem(0 auto);
   }
 
-  &--dark {
-    background: $aqua-100;
+  &--aqua {
+    background: $aqua-200;
   }
 
   @media(min-width: $breakpoint-medium) {
