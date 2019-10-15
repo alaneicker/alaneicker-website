@@ -1,7 +1,7 @@
-<section id="resume" class="section">
+<section id="featured" class="section section--light-gray">
   <div class="section__content">
     <div class="heading">
-      <h2>Resum&eacute;</h2>
+      <h2>Featured Project</h2>
       <div class="divider divider--dark"></div>
     </div>
   </div>
