@@ -15,8 +15,11 @@
     &__content {
       width: 90%;
       display: flex;
-      justify-content: space-between;
       text-align: left;
+
+      & > * {
+        flex: 1;
+      }
 
       & > :last-child {
         text-align: right;

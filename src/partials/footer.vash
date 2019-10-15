@@ -1,6 +1,17 @@
 <footer class="c-footer">
   <div class="c-footer__content">
     <div>@html.raw(model.copyright)</div>
+    <ul class="social-media-list">
+      @model.socialMedia.forEach(function (media) {
+        <li class="social-media-list__item">
+          <a rel="noopener" target="_blank" href="@media.link.url">
+            <svg fill="@media.svg.fill" enableBackground="new 0 0 24 24" height="36" viewBox="@media.svg.viewBox" xmlns="http://www.w3.org/2000/svg">
+              <path d="@media.svg.path"/>
+            </svg>
+          </a>
+        </li>
+      })
+    </ul>
     <div>@model.phone &bull; <a class="is-inverse" href="mailto:@model.email">@model.email</a></div>
   </div>
 </footer>
