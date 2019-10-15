@@ -1,6 +1,6 @@
 <div id="home" class="c-hero"> 
   <div class="c-hero__content">
-    <img class="margin-bottom-16" src="/images/ninja.svg" width="200" alt="Ninja">
+    <img class="c-hero__image" src="/images/ninja.svg" alt="Ninja">
     <h1 class="c-hero__heading">@model.heroHeading</h1>
     <div class="divider"></div>
     <p class="c-hero__subheading">@model.heroSubHeading</p>
