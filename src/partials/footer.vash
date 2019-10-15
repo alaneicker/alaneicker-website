@@ -6,6 +6,7 @@
         <li class="social-media-list__item">
           <a rel="noopener" target="_blank" href="@media.link.url">
             <svg fill="@media.svg.fill" enableBackground="new 0 0 24 24" height="36" viewBox="@media.svg.viewBox" xmlns="http://www.w3.org/2000/svg">
+              <title>@media.heading</title>
               <path d="@media.svg.path"/>
             </svg>
           </a>

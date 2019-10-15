@@ -13,10 +13,6 @@
     margin-bottom: 0;
   }
 
-  &__heading {
-    font-size: rem(28);
-  }
-
   @media (min-width: $breakpoint-medium) {
     margin: rem(0);
   }
