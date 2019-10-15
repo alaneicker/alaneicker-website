@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: no-repeat center bottom/100% auto url($hero-img);
+    background: no-repeat center bottom/220% auto url($hero-img);
     opacity: 0.08;
   }
 
@@ -56,7 +56,11 @@
   }
 
   @media(min-width: $breakpoint-medium) {
-
+    &:before {
+      background-position: center bottom;
+      background-size: 150%; 
+    }
+    
     &__heading {
       font-size: rem(60);
     }
@@ -71,6 +75,13 @@
 
     &__image {
       width: rem(200);
+    }
+  }
+
+  @media(min-width: $breakpoint-large) {
+    &:before {
+      background-position: center bottom;
+      background-size: 100%; 
     }
   }
 }
