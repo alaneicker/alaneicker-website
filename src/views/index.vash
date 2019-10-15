@@ -27,8 +27,8 @@
 		<section id="featured" class="section section--dark">
 			<div class="section__content">
 				<div class="heading">
-					<h2>Featured Project</h2>
-					<div class="divider divider--dark"></div>
+					<h2 class="text-color-white">Featured Project</h2>
+					<div class="divider"></div>
 				</div>
 			</div>
 		</section>
