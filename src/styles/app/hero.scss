@@ -40,13 +40,14 @@
   &__subheading {
     font-size: rem(25);
     line-height: 1.3;
-    font-weight: $font-medium;
+    font-weight: $font-semibold;
   }
 
   &__text-content {
     font-size: rem(18);
     margin-top: rem(16);
     color: $white;
+    font-weight: $font-semibold;
   }
   
   &__image {
