@@ -21,6 +21,10 @@
 
   @each $name, $breakpoint in $breakpoints {
     @media(min-width: $breakpoint) {
+      .margin-collapse\@#{$name} {
+        margin: 0;
+      }
+      
       .margin-#{$increment}\@#{$name} {
         margin: rem($increment);
       }

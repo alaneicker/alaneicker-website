@@ -1,10 +1,9 @@
-<div class="c-hero @(model.isHome !== true ? 'c-hero--condensed' : '')"> 
+<div id="home" class="c-hero"> 
   <div class="c-hero__content">
-    <img class="c-hero__profile-image" src="images/profile-pic.png" alt="profile image" />
+    <img class="c-hero__image" src="/images/ninja.svg" alt="Ninja">
     <h1 class="c-hero__heading">@model.heroHeading</h1>
-    <h2 class="c-hero__subheading">@model.heroSubHeading</h2>
-    <div class="c-hero__text-content">
-      <p class="text-align-left">@model.heroContent</p>
-    </div>
+    <div class="divider"></div>
+    <p class="c-hero__subheading">@model.heroSubHeading</p>
+    <p class="text-size-20 text-weight-medium">A deadly combination of HTML, CSS &amp; JavaScript.</p>
   </div>
 </div>

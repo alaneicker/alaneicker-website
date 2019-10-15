@@ -2,16 +2,45 @@
   display: flex;
 
   & > * > a {
-    color: $black;
+    color: $white;
+    font-size: rem(16);
     text-decoration: none;
-    font-weight: $font-semibold;
+    font-weight: $font-bold;
     display: block;
     line-height: rem(60);
-    padding: rem(0 10);
+    padding: rem(0 16);
+    text-transform: uppercase;
 
     &.is-active,
     &:hover {
-      color: $red-100;
+      background: $aqua-100;
+      color: $white;
+    }
+  }
+
+  & > * {
+    display: none;
+  }
+
+  & > :last-of-type {
+    display: block;
+
+    img {
+      fill: $white;
+      position: relative;
+      top: rem(6);
+      width: rem(24);
+      height: rem(24);
+    }
+  }  
+
+  @media(min-width: $breakpoint-medium) {
+    & > * {
+      display: block;
+    }
+
+    & > :last-of-type {
+      display: none;
     }
   }
 }

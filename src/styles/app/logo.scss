@@ -1,0 +1,11 @@
+.logo {
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: $font-bold;
+  font-size: rem(24);
+
+  &:hover {
+    color: $white;
+  }
+}

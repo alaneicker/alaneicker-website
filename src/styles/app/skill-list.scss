@@ -1,0 +1,38 @@
+.skill-list {
+  margin-top: rem(32);
+  color: $white;
+  font-weight: $font-bold;
+  font-size: rem(13);
+
+  & > * + * {
+    margin-top: rem(16);
+  }
+
+  &__track {
+    background: $gray-100;
+    display: flex;
+    border-radius: rem(2);
+    overflow: hidden;
+  }
+
+  &__label {
+    background: $aqua-200;
+    text-transform: uppercase;
+    padding: rem(8 16);
+    flex: rem(120) 0 0;
+    text-align: right;
+  }
+
+  &__bar {
+    background: $aqua-100;
+    display: flex;
+    align-items: center;
+    padding: rem(0 16);
+    color: $white;
+    justify-content: flex-end;
+  }
+
+  @media(min-width: $breakpoint-medium) {
+    margin-top: rem(0);
+  }
+}

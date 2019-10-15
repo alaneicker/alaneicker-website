@@ -1,0 +1,26 @@
+.section {
+  background: $white;
+
+  &__content {
+    max-width: rem($site-width);
+    margin: rem(0 auto);
+  }
+
+  &--navy {
+    background: $navy-100;
+  }
+
+  &--aqua {
+    background: $aqua-200;
+  }
+
+  &--light-gray {
+    background: $gray-100;
+  }
+
+  @media(min-width: $breakpoint-medium) {
+    &__content {
+      width: 90%;
+    }
+  }
+}

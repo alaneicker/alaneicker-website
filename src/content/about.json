@@ -1,66 +1,49 @@
 {
-  "heroSubHeading": "A bit About Me",
-  "intoSectionText": "<p>I began my journey twelve years ago as a junior UI engineer for a small design company building ColdFusion websites for construction companies. Today, I lead the UI efforts for one of America's largest insurance companies, working with technologies such as Angular 5, React and Node.js.</p><p>Throughout my career, I've seen the Web grow from simple static HTML websites into complex data-driven Progressive Web Apps. Over the years, I've invested countless hours honing my skills to stay on top of the next emerging technology trend. I'm not an expert at everything out there, but I'd be comfortable working in any tech stack, whether it be .NET, MEAN, React, or plain old vanilla JavaScript.</p>",
-  "resumeSectionText": "I've had the fortunate opportunity to work at a lot of great companies. Take a look at my resum&eacute; to learn more about my career journey.",
-  "areasOfExpertise": [
+  "intoText": "<p>I began my journey twelve years ago as a junior front-end engineer for a small design company building ColdFusion websites for construction companies. Today, I lead the front-end efforts for one of America's largest insurance companies, working with technologies such as Angular 5, React and Node.js.</p><p>Throughout my career, I've seen the Web grow from simple static HTML websites into complex data-driven Progressive Web Apps. Over the years, I've invested countless hours honing my skills to stay on top of the next emerging technology trend. I'm not an expert at everything out there, but I'd be comfortable working in any tech stack, whether it be .NET, MEAN, React, or plain old vanilla JavaScript.</p>",
+  "skills": [
     {
-      "category": "Programming",
-      "skills": [
-        "HTML",
-        "CSS",
-        "Sass",
-        "JavaScript",
-        "React",
-        "Redux",
-        "Angular",
-        "Node.js",
-        "GrapghQL",
-        "MongoDB",
-        "MySql"
-      ]
+      "name": "HTML",
+      "rank": 10
     },
     {
-      "category": "Bundlers",
-      "skills": [
-        "Webpack",
-        "Parcel",
-        "Gulp"
-      ]
+      "name": "CSS",
+      "rank": 10
     },
     {
-      "category": "Testing",
-      "skills": [
-        "Jest",
-        "Jasmine"
-      ]
+      "name": "JavaScript",
+      "rank": 9
     },
     {
-      "category": "version Control",
-      "skills": [
-        "Git",
-        "GitHub"
-      ]
+      "name": "React",
+      "rank": 8
     },
     {
-      "category": "API Development",
-      "skills": [
-        "Postman"
-      ]
+      "name": "Angular",
+      "rank": 6
     },
     {
-      "category": "IDEs",
-      "skills": [
-        "Visual Studio Code"
-      ]
+      "name": "Node.js",
+      "rank": 8
     },
     {
-      "category": "Specialties",
-      "skills": [
-        "Responsive Mobile Web",
-        "Reusable Components",
-        "Progressive Web Apps",
-        "Accessibility"
-      ]
+      "name": "GraphQL",
+      "rank": 6
     }
+  ],
+  "otherSkills": [
+    "Webpack",
+    "Gulp",
+    "Redux",
+    "Jest",
+    "Jasmine",
+    "MySql",
+    "MongoDB",
+    "Git",
+    "Postman",
+    "Visual Studio Code",
+    "Responsive Mobile Web",
+    "Reusable Components",
+    "Accessibility",
+    "Progressive Web Apps"
   ]
 }

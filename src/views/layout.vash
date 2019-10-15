@@ -25,47 +25,19 @@
   <body>
     <div class="l-page">
       <header class="l-page__header">
+        <a class="logo" href="#home">Alan Eicker</a>
         @html.include("../partials/main-nav")
       </header>
-      <div class="l-page__body">
+      <div id="page-body" class="l-page__body">
         @html.include("../partials/hero")
         <div class="l-page__main">
-          @if(!model.isHome) {
-            <div class="l-page__content">
-              @html.block('body')
-            </div>
-          }
+          <div class="l-page__content">
+            @html.block('body')
+          </div>
           @html.include("../partials/footer")
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      const registerServiceWorker = () => {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(reg => {
-            console.log('[ServiceWorker] Registered');
-          }).catch(err => {
-            console.log('[ServiceWorker] Registration error', err);
-          });
-      };
-
-      const addBeforeInstallPromtEvent = () => {
-        window.addEventListener('beforeinstallprompt', e => {
-              
-          setTimeout(() => {
-            e.prompt();
-          }, 20000);
-          
-          e.userChoice.then(outcome => { 
-            console.log(outcome);
-          }, err => {
-            console.log('Error: ', err);
-          }); 
-        });
-      };
-
-      ('serviceWorker' in navigator && registerServiceWorker());
-      ('beforeinstallprompt' in window && addBeforeInstallPromtEvent());
-    </script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
