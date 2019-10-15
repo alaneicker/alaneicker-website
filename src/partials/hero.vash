@@ -4,6 +4,6 @@
     <h1 class="c-hero__heading">@model.heroHeading</h1>
     <div class="divider"></div>
     <p class="c-hero__subheading">@model.heroSubHeading</p>
-    <p class="text-size-20 text-weight-medium">A deadly combination of HTML, CSS &amp; JavaScript.</p>
+    <p class="text-size-20 text-weight-medium">@html.raw(model.heroContent)</p>
   </div>
 </div>
